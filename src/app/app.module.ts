@@ -11,7 +11,7 @@ import { MostpopactivitiesComponent } from './components/home/mostpopactivities/
 import { HomeComponent } from './components/home/home.component';
 import { CitiesComponent } from './components/cities/cities.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
-
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { ActivitiesComponent } from './components/activities/activities.componen
     MostpopactivitiesComponent,
     HomeComponent,
     CitiesComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
