@@ -1,0 +1,20 @@
+
+<div class="container mt-5">
+
+    <h1 class="text-center mb-5">Ciudades más buscadas</h1>
+    
+    <div class="row">
+      <div class="col-4"  *ngFor="let city of cities">
+          <div class="card mb-3">
+              <img class="card-img-top" [src]="city.image" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{ city.name }}</h5>
+                <p class="card-text">{{ city.description | slice:0:50 }}...</p>
+              </div>
+            </div>
+      </div>
+    </div>
+
+</div>
+
+

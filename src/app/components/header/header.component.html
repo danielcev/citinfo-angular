@@ -1,11 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" [routerLink]="['./home']">Citinfo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" size="50" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
 
-
-<nav class="navbar navbar-light bg-light justify-content-between">
-    <i class="fa fa-certificate m-0"></i>
-  <form class="form-inline">
-        <input class="form-control mr-sm-2" size="50" type="search" placeholder="Ciudad que buscas" aria-label="Buscar">
-        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
-  </form>
-
-  <a class="navbar-brand">Citinfo</a>
-</nav>
+      <ul class="navbar-nav mr-auto ml-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['cities']">Ciudades</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['activities']">Actividades</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

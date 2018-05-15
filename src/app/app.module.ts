@@ -1,20 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//Routing
+import { app_routing } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { moresearchComponent } from './components/home/moresearch/moresearch.component';
+import { MostpopactivitiesComponent } from './components/home/mostpopactivities/mostpopactivities.component';
 import { HomeComponent } from './components/home/home.component';
+import { CitiesComponent } from './components/cities/cities.component';
+import { ActivitiesComponent } from './components/activities/activities.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    moresearchComponent,
+    MostpopactivitiesComponent,
+    HomeComponent,
+    CitiesComponent,
+    ActivitiesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    app_routing
   ],
   providers: [],
   bootstrap: [AppComponent]
