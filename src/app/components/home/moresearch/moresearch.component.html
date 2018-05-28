@@ -5,7 +5,7 @@
     
     <div class="row">
       <div class="col-4"  *ngFor="let city of cities">
-          <div class="card mb-3">
+          <div class="card mb-3 pointer">
               <img class="card-img-top" [src]="city.image" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">{{ city.name }}</h5>
@@ -15,6 +15,10 @@
       </div>
     </div>
 
+    <hr>
+
 </div>
+
+
 
 

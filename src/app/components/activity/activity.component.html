@@ -1,0 +1,63 @@
+<div class="row" id="box-search">
+    <div class="thumbnail text-center pickgradient">
+        <img [src]="activity.image" alt="" class="img-responsive">
+        <div class="caption">
+            <h1>{{activity.name}}</h1>
+            <p class="lead">{{activity.city}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-10 container">
+        <div class="card">
+            <div class="card-header">
+              Información
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>{{activity.description}}</p>
+                <footer class="blockquote-footer">Precio: {{activity.price}}</footer>
+              </blockquote>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-10 container">
+          <div class="card">
+              <div class="card-header">
+                ¿Dónde es?
+              </div>
+              <div class="card-body">
+
+                <agm-map [latitude]="activity.direction.lat" [longitude]="activity.direction.lon">
+                  <agm-marker [latitude]="activity.direction.lat" [longitude]="activity.direction.lon"></agm-marker>
+                </agm-map>
+                 
+              </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 container">
+            <div class="card">
+                <div class="card-header">
+                  Página web
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p><small>Para encontrar más información acerca de esta actividad o realizar una reserva puedes consultar su página web.</small></p>
+                      <footer class="blockquote-footer"><a target="_blank" [href]="activity.url">{{activity.url}}</a></footer>
+                    </blockquote>
+                  </div>
+              </div>
+        </div>
+      </div>
+
+  
+</div>
